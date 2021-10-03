@@ -12,8 +12,8 @@ pipeline {
       steps {
         echo 'Dev mvn build'
          bat 'start /min StopApp.bat'
-            bat 'mvn install'
-            bat 'set JENKINS_NODE_COOKIE=dontkillme && start /min StartApp.bat'
+         bat 'mvn install'
+         bat 'set JENKINS_NODE_COOKIE=dontkillme && start /min StartApp.bat'
       }
     }
 
