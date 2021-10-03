@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('dev code pull') {
       steps {
-        echo 'Dev code pull'
+        echo 'Dev code pull-update'
          git url :'https://github.com/TestLeafInc/WebApp.git'
       }
     }
