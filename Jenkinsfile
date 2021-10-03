@@ -38,13 +38,13 @@ pipeline {
 
     stage('QA approval') {
       steps {
-        input(message: 'QA approval ', id: 'Yes', ok: 'No')
+        input(message: 'QA approval ', id: 'Yes', ok: 'Yes-good')
       }
     }
 
     stage('UAT approval') {
       steps {
-        input(message: 'UAT approval', id: 'Yes', ok: 'No')
+        input(message: 'UAT approval', id: 'Yes', ok: 'Yes-good')
       }
     }
 
